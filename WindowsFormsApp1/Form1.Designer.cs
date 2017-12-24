@@ -1,4 +1,4 @@
-﻿namespace WindowsFormsApp3
+﻿namespace WindowsFormsApp1
 {
     partial class Form1
     {
@@ -28,44 +28,45 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.TextBox = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.ResultLabel = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // TextBox
+            // textBox1
             // 
-            this.TextBox.Location = new System.Drawing.Point(36, 57);
-            this.TextBox.Name = "TextBox";
-            this.TextBox.Size = new System.Drawing.Size(100, 20);
-            this.TextBox.TabIndex = 0;
+            this.textBox1.Location = new System.Drawing.Point(51, 99);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 0;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(142, 60);
+            this.label1.Location = new System.Drawing.Point(158, 105);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(77, 13);
+            this.label1.Size = new System.Drawing.Size(56, 13);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Факториал = ";
+            this.label1.Text = "factorial = ";
             // 
-            // ResultLabel
+            // label2
             // 
-            this.ResultLabel.AutoSize = true;
-            this.ResultLabel.Location = new System.Drawing.Point(216, 60);
-            this.ResultLabel.Name = "ResultLabel";
-            this.ResultLabel.Size = new System.Drawing.Size(13, 13);
-            this.ResultLabel.TabIndex = 2;
-            this.ResultLabel.Text = "0";
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(210, 105);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(13, 13);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "0";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 261);
-            this.Controls.Add(this.ResultLabel);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.TextBox);
+            this.Controls.Add(this.textBox1);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -75,11 +76,9 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox TextBox;
+        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label ResultLabel;
-        
-
+        private System.Windows.Forms.Label label2;
     }
 }
 
